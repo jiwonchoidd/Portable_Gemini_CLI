@@ -22,4 +22,4 @@
 
 1. 이 프로젝트 폴더를 원하는 위치에 다운로드하거나 클론합니다.
 2. 폴더 내의 `01_Install_gemini_cli.cmd` 파일을 더블클릭하여 실행합니다.
-3. Powershell 에서 `gemini` 명령어를 입력하여 사용을 시작합니다.
+3. Powershell 에서 `gemini` 명령어를 입력하거나 gemini.cmd 실행합니다.
