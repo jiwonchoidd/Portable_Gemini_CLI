@@ -3,11 +3,10 @@ setlocal
 
 echo.
 echo ===========================================
-echo   Gemini CLI 설치 스크립트 (디버그 모드)
+echo   Gemini CLI 설치 스크립트
 echo ===========================================
 echo.
 
-rem 스크립트 시작 확인 (강제 멈춤)
 echo 스크립트가 시작되었습니다. 계속하려면 아무 키나 누르세요...
 pause >nul
 echo.
@@ -18,7 +17,6 @@ set "GEMINI_CLI_PORTABLE_PATH=%~dp0"
 echo CLI 실행 경로: %GEMINI_CLI_PORTABLE_PATH%
 echo.
 
-rem 경로 설정 확인 (잠시 대기)
 timeout /t 2 /nobreak >nul
 
 rem 현재 세션의 PATH에 CLI 경로 임시 추가
@@ -41,7 +39,6 @@ if %errorlevel% neq 0 (
 )
 echo.
 
-rem npm 확인 후 (잠시 대기)
 timeout /t 2 /nobreak >nul
 
 echo @google/gemini-cli 전역 설치 중...
@@ -66,7 +63,6 @@ if %errorlevel% neq 0 (
     echo.
 )
 
-rem 설치 결과 확인 후 (잠시 대기)
 timeout /t 3 /nobreak >nul
 
 echo.
@@ -78,7 +74,7 @@ echo ===========================================
 echo.
 
 :end_script
-rem 최종 멈춤!
+
 echo 스크립트 실행이 완료되었습니다. 창을 닫으려면 아무 키나 누르십시오...
 pause >nul
 endlocal
